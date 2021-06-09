@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      
+    function validate(){
+        var email = document.getElementById("email");
+        var pwd = document.getElementById("pwd");
+
+    if(email.value==""||pwd.value==""){
+        alert("Fields cannot be empty");
+        return false;
+    }
+    else{
+        return true;
+        //alert("Validation is proper");
+        
+    }
+}
+    </script>
+</head>
+<body background="images/kathu.jpg" >
+
+    <form action="#">
+        <input type="email" placeholder="enter mobile no/email" required>
+        <input type="password" placeholder="enter password" required>
+        <input type="submit" value="LOGIN">
+    </form>
+    <!--Form--
+    <div class="logo">
+        
+    </div>
+    <form action="#" onsubmit="return validate()">
+        <h2>User Login</h2>
+        <br>
+        
+            <label>Username</label>
+            <br>
+            <input type="text" placeholder="enter mobile no/email" id="email">
+             
+            <label>Password</label>
+            <br>
+            <input type="password" placeholder="enter password" id="pwd">
+            <br>
+        
+        <div class="loginbutton">
+            <br>
+            <a href="home.html">LOGIN</a>
+        </div>
+        
+        <div class="loginmisc">
+            <br>
+            <h5>New User?</h5>
+            <a href="signup.html">Signup</a>
+        </div>
+    </form>
+    
+    Form-->
+    
+</body>
+</html>
